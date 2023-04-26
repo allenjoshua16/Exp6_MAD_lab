@@ -6,9 +6,9 @@ To develop multiple activities and navigate through routes for our Flutter appli
 
 During this experiment, we acquired knowledge about
 
-*Navigate between activities using routes
-*Pass data through routing
-*Consume API
+* Navigate between activities using routes
+* Pass data through routing
+* Consume API
 
 ## Screenshots
 
