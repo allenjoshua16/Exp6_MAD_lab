@@ -7,6 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 import 'package:meme/main.dart';
 import 'package:share_plus/share_plus.dart';
+import 'package:meme/navbar.dart';
+
 // import 'package:url_launcher/url_launcher.dart';
 // import 'package:url_launcher/url_launcher_string.dart';
 
@@ -62,10 +64,11 @@ class _MemeState extends State<Meme> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(                    //UI
-      backgroundColor: Color.fromARGB(255, 235, 192, 177),
+    return Scaffold(   
+    drawer: NavBar(),                 //UI
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.teal,
         centerTitle: true,
         title: Text(
           'Memes',
@@ -107,7 +110,7 @@ class _MemeState extends State<Meme> {
                       sharePress();
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.red, // Background color of button
+                      primary: Colors.teal, // Background color of button
                       elevation: 3, // Depth of the button
                       shape: RoundedRectangleBorder(
                         borderRadius:
@@ -135,7 +138,7 @@ class _MemeState extends State<Meme> {
                       apicall();
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Colors.red, // Background color of button
+                      primary: Colors.teal, // Background color of button
                       elevation: 3, // Depth of the button
                       shape: RoundedRectangleBorder(
                         borderRadius:
